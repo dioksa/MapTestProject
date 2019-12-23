@@ -80,7 +80,6 @@
 				6339A297770803C5C0CEC2ED /* Pods-MapTestProject.debug.xcconfig */,
 				1027662179AA4F8661640889 /* Pods-MapTestProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
