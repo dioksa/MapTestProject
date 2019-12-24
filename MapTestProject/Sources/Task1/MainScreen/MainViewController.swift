@@ -7,6 +7,15 @@
 //
 
 import UIKit
+import Firebase
+
+protocol Injectable {
+    associatedtype Dependencies
+}
+
+protocol SetInjectable: Injectable {
+    func inject(dependencies: Dependencies)
+}
 
 private enum Constants {
     static let size: CGFloat = 40.0
@@ -16,6 +25,8 @@ private enum Constants {
 }
 
 class MainViewController: UIViewController {
+    private let container = DependencyContainer()
+    
     // MARK: - Private variables
     @IBOutlet private weak var topButton: UIButton! {
         didSet {
@@ -46,19 +57,17 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func topButtonAction(_ sender: UIButton) {
-        let controller = UIStoryboard.instantiateViewController(of: RegistrationViewController.self)
-        let navigation = BaseNavigationController(rootViewController: controller)
-        navigation.modalPresentationStyle = .fullScreen
-        present(navigation, animated: true, completion: nil)
+        if Auth.auth().currentUser == nil {
+            let navigationController = container.createNavigationController()
+            navigationController.modalPresentationStyle = .fullScreen
+            self.present(navigationController, animated: true, completion: nil)
+        } else {
+            let controller = container.createTabBarController()
+            self.present(controller, animated: true, completion: nil)
+        }
     }
-    
     
     @IBAction func bottomButtonAction(_ sender: UIButton) {
         print("Button button was tapped")
-    }
-    
-    // MARK: - Controller's life cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }

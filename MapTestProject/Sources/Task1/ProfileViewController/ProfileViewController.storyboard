@@ -14,7 +14,20 @@
                     <view key="view" contentMode="scaleToFill" id="nUh-R9-KLI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-Rc-50f">
+                                <rect key="frame" x="104.5" y="433" width="205" height="30"/>
+                                <state key="normal" title="Sign out from Google account"/>
+                                <connections>
+                                    <action selector="signOutButton:" destination="RNN-j7-W3s" eventType="touchUpInside" id="TXb-bw-IWj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TRk-Rc-50f" firstAttribute="centerX" secondItem="nUh-R9-KLI" secondAttribute="centerX" id="jHo-dV-lPB"/>
+                            <constraint firstItem="TRk-Rc-50f" firstAttribute="centerY" secondItem="nUh-R9-KLI" secondAttribute="centerY" id="myw-l0-vuq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="voj-RR-Iaa"/>
                     </view>
                 </viewController>
