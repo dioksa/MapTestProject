@@ -3,11 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		10C527BDA4CD2CA89E0247D1 /* Pods_MapTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79B7618EFCBDB07C53ACD52 /* Pods_MapTestProject.framework */; };
+		1E245BF823B0C8780073C11E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245BF723B0C8780073C11E /* RegistrationViewController.swift */; };
+		1E245BFA23B0C9420073C11E /* RegistrationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245BF923B0C9420073C11E /* RegistrationViewController.storyboard */; };
+		1E245BFC23B0CA620073C11E /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245BFB23B0CA620073C11E /* UIStoryboard.swift */; };
+		1E245C0023B0D1860073C11E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245BFF23B0D1860073C11E /* BaseNavigationController.swift */; };
+		1E245C0223B0D5D30073C11E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C0123B0D5D30073C11E /* GoogleService-Info.plist */; };
+		1E245C0423B0DE660073C11E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C0323B0DE660073C11E /* TabBarViewController.swift */; };
+		1E245C0623B0DEC70073C11E /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C0523B0DEC70073C11E /* TabBarViewController.storyboard */; };
+		1E245C0823B0E1580073C11E /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C0723B0E1580073C11E /* UITabBarItem.swift */; };
+		1E245C0A23B0E19A0073C11E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C0923B0E19A0073C11E /* ListViewController.swift */; };
+		1E245C1423B0E2AE0073C11E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C1323B0E2AE0073C11E /* UIImage.swift */; };
+		1E245C1B23B0E3330073C11E /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C1A23B0E3330073C11E /* ListViewController.storyboard */; };
+		1E245C1D23B0E3610073C11E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C1C23B0E3610073C11E /* MapViewController.swift */; };
+		1E245C1F23B0E36A0073C11E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */; };
+		1E245C2123B0ECD10073C11E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C2023B0ECD10073C11E /* ProfileViewController.swift */; };
+		1E245C2323B0ED150073C11E /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C2223B0ED150073C11E /* ProfileViewController.storyboard */; };
+		1E245C2523B1ED4B0073C11E /* TopNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C2423B1ED4B0073C11E /* TopNavigationController.swift */; };
 		1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */; };
 		1E9F157823B0B09F00F5C0E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */; };
 		1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157923B0B09F00F5C0E1 /* MainViewController.swift */; };
@@ -18,6 +34,22 @@
 
 /* Begin PBXFileReference section */
 		1027662179AA4F8661640889 /* Pods-MapTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTestProject.release.xcconfig"; path = "Target Support Files/Pods-MapTestProject/Pods-MapTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		1E245BF723B0C8780073C11E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		1E245BF923B0C9420073C11E /* RegistrationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationViewController.storyboard; sourceTree = "<group>"; };
+		1E245BFB23B0CA620073C11E /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		1E245BFF23B0D1860073C11E /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		1E245C0123B0D5D30073C11E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E245C0323B0DE660073C11E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1E245C0523B0DEC70073C11E /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		1E245C0723B0E1580073C11E /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
+		1E245C0923B0E19A0073C11E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1E245C1323B0E2AE0073C11E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		1E245C1A23B0E3330073C11E /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		1E245C1C23B0E3610073C11E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		1E245C2023B0ECD10073C11E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1E245C2223B0ED150073C11E /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		1E245C2423B1ED4B0073C11E /* TopNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationController.swift; sourceTree = "<group>"; };
 		1E9F157223B0B09F00F5C0E1 /* MapTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +74,130 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E245C0B23B0E1AF0073C11E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F158023B0B0A100F5C0E1 /* LaunchScreen.storyboard */,
+				1E245C0123B0D5D30073C11E /* GoogleService-Info.plist */,
+				1E9F158323B0B0A100F5C0E1 /* Info.plist */,
+				1E9F157E23B0B0A100F5C0E1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E245C0C23B0E1B80073C11E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C1123B0E2720073C11E /* Base */,
+				1E245C0D23B0E1C50073C11E /* Task1 */,
+				1E245C0E23B0E1D20073C11E /* Task2 */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1E245C0D23B0E1C50073C11E /* Task1 */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C1523B0E2D10073C11E /* MainScreen */,
+				1E245C1623B0E2DE0073C11E /* Registration */,
+				1E245C1223B0E2910073C11E /* TabBarViewController */,
+				1E245C1723B0E2F70073C11E /* ListViewController */,
+				1E245C1923B0E3100073C11E /* MapViewController */,
+				1E245C1823B0E3010073C11E /* ProfileViewController */,
+			);
+			path = Task1;
+			sourceTree = "<group>";
+		};
+		1E245C0E23B0E1D20073C11E /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task2;
+			sourceTree = "<group>";
+		};
+		1E245C0F23B0E23D0073C11E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C1023B0E25B0073C11E /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E245C1023B0E25B0073C11E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1E245BFB23B0CA620073C11E /* UIStoryboard.swift */,
+				1E245C0723B0E1580073C11E /* UITabBarItem.swift */,
+				1E245C1323B0E2AE0073C11E /* UIImage.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1E245C1123B0E2720073C11E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */,
+				1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */,
+				1E245BFF23B0D1860073C11E /* BaseNavigationController.swift */,
+				1E245C2423B1ED4B0073C11E /* TopNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1E245C1223B0E2910073C11E /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C0323B0DE660073C11E /* TabBarViewController.swift */,
+				1E245C0523B0DEC70073C11E /* TabBarViewController.storyboard */,
+			);
+			path = TabBarViewController;
+			sourceTree = "<group>";
+		};
+		1E245C1523B0E2D10073C11E /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F157923B0B09F00F5C0E1 /* MainViewController.swift */,
+				1E9F157B23B0B09F00F5C0E1 /* Main.storyboard */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		1E245C1623B0E2DE0073C11E /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				1E245BF723B0C8780073C11E /* RegistrationViewController.swift */,
+				1E245BF923B0C9420073C11E /* RegistrationViewController.storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		1E245C1723B0E2F70073C11E /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C0923B0E19A0073C11E /* ListViewController.swift */,
+				1E245C1A23B0E3330073C11E /* ListViewController.storyboard */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		1E245C1823B0E3010073C11E /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C2023B0ECD10073C11E /* ProfileViewController.swift */,
+				1E245C2223B0ED150073C11E /* ProfileViewController.storyboard */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		1E245C1923B0E3100073C11E /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C1C23B0E3610073C11E /* MapViewController.swift */,
+				1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
 		1E9F156923B0B09F00F5C0E1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +219,9 @@
 		1E9F157423B0B09F00F5C0E1 /* MapTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */,
-				1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */,
-				1E9F157923B0B09F00F5C0E1 /* MainViewController.swift */,
-				1E9F157B23B0B09F00F5C0E1 /* Main.storyboard */,
-				1E9F157E23B0B0A100F5C0E1 /* Assets.xcassets */,
-				1E9F158023B0B0A100F5C0E1 /* LaunchScreen.storyboard */,
-				1E9F158323B0B0A100F5C0E1 /* Info.plist */,
+				1E245C0B23B0E1AF0073C11E /* Resources */,
+				1E245C0C23B0E1B80073C11E /* Sources */,
+				1E245C0F23B0E23D0073C11E /* Extensions */,
 			);
 			path = MapTestProject;
 			sourceTree = "<group>";
@@ -102,6 +254,8 @@
 				1E9F156E23B0B09F00F5C0E1 /* Sources */,
 				1E9F156F23B0B09F00F5C0E1 /* Frameworks */,
 				1E9F157023B0B09F00F5C0E1 /* Resources */,
+				39724E43B9BEB5965FD43860 /* [CP] Embed Pods Frameworks */,
+				0F83449EDEAD4D6A2C91A899 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,8 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E245C1F23B0E36A0073C11E /* MapViewController.storyboard in Resources */,
 				1E9F158223B0B0A100F5C0E1 /* LaunchScreen.storyboard in Resources */,
 				1E9F157F23B0B0A100F5C0E1 /* Assets.xcassets in Resources */,
+				1E245C0223B0D5D30073C11E /* GoogleService-Info.plist in Resources */,
+				1E245C0623B0DEC70073C11E /* TabBarViewController.storyboard in Resources */,
+				1E245C2323B0ED150073C11E /* ProfileViewController.storyboard in Resources */,
+				1E245C1B23B0E3330073C11E /* ListViewController.storyboard in Resources */,
+				1E245BFA23B0C9420073C11E /* RegistrationViewController.storyboard in Resources */,
 				1E9F157D23B0B09F00F5C0E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +319,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F83449EDEAD4D6A2C91A899 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1CD1BD1D5B796F7A5106CD88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +358,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		39724E43B9BEB5965FD43860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapTestProject/Pods-MapTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,8 +382,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E245C1D23B0E3610073C11E /* MapViewController.swift in Sources */,
 				1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */,
+				1E245C1423B0E2AE0073C11E /* UIImage.swift in Sources */,
+				1E245C2523B1ED4B0073C11E /* TopNavigationController.swift in Sources */,
+				1E245BFC23B0CA620073C11E /* UIStoryboard.swift in Sources */,
+				1E245C0023B0D1860073C11E /* BaseNavigationController.swift in Sources */,
 				1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */,
+				1E245C2123B0ECD10073C11E /* ProfileViewController.swift in Sources */,
+				1E245C0423B0DE660073C11E /* TabBarViewController.swift in Sources */,
+				1E245C0A23B0E19A0073C11E /* ListViewController.swift in Sources */,
+				1E245BF823B0C8780073C11E /* RegistrationViewController.swift in Sources */,
+				1E245C0823B0E1580073C11E /* UITabBarItem.swift in Sources */,
 				1E9F157823B0B09F00F5C0E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33X989WP3S;
-				INFOPLIST_FILE = MapTestProject/Info.plist;
+				INFOPLIST_FILE = MapTestProject/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,7 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33X989WP3S;
-				INFOPLIST_FILE = MapTestProject/Info.plist;
+				INFOPLIST_FILE = MapTestProject/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
