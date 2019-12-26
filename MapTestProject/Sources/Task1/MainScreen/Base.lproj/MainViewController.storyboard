@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-qf-AGD">
-                                <rect key="frame" x="147" y="511" width="120" height="34"/>
+                                <rect key="frame" x="147" y="571" width="120" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="8l1-R8-SU5"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWH-W1-R8g">
-                                <rect key="frame" x="147" y="351" width="120" height="34"/>
+                                <rect key="frame" x="147" y="291" width="120" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="x5T-wA-jdi"/>
                                 </constraints>
@@ -58,8 +58,8 @@
                         <constraints>
                             <constraint firstItem="TWH-W1-R8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Pi-2D-rMp"/>
                             <constraint firstItem="Bel-qf-AGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dkj-K8-ciW"/>
-                            <constraint firstItem="Bel-qf-AGD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="Shb-xw-qiC"/>
-                            <constraint firstItem="TWH-W1-R8g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="muK-FF-UxP"/>
+                            <constraint firstItem="Bel-qf-AGD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="Shb-xw-qiC"/>
+                            <constraint firstItem="TWH-W1-R8g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="muK-FF-UxP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

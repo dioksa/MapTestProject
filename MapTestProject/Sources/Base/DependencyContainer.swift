@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DependencyContainer {
+final class DependencyContainer {
     func createNavigationController() -> BaseNavigationController {
         let controller = UIStoryboard.instantiateViewController(of: RegistrationViewController.self)
         let viewModel = RegistrationViewModel(factory: self)
@@ -35,15 +35,29 @@ extension DependencyContainer: RegistrationFactory {
 
 // MARK: - TabBarFactory
 extension DependencyContainer: TabBarFactory {
-    func createListNavigation() -> TopNavigationController {
-        return TopNavigationController(rootViewController: UIStoryboard.instantiateViewController(of: ListViewController.self))
+    func createListNavigation(delegate: TabBarViewController?) -> TopNavigationController {
+        let controller = UIStoryboard.instantiateViewController(of: ListViewController.self)
+        let viewModel = ListViewModel()
+        let viewModelDependencies = ListViewModel.Dependencies(cityService: CityService())
+        viewModel.inject(dependencies: viewModelDependencies)
+        viewModel.view = controller
+        let dependencies = ListViewController.Dependencies(viewModel: viewModel)
+        controller.inject(dependencies: dependencies)
+        controller.mapDelegate = delegate
+        return TopNavigationController(rootViewController: controller)
     }
     
     func createMapNavigation() -> TopNavigationController {
-        TopNavigationController(rootViewController: UIStoryboard.instantiateViewController(of: MapViewController.self))
+        let controller = UIStoryboard.instantiateViewController(of: MapViewController.self)
+        let viewModel = MapViewModel()
+        let viewModelDependencies = MapViewModel.Dependencies(cityService: CityService())
+        viewModel.inject(dependencies: viewModelDependencies)
+        let dependencies = MapViewController.Dependencies(viewModel: viewModel)
+        controller.inject(dependencies: dependencies)
+        return TopNavigationController(rootViewController: controller)
     }
     
     func createProfileNavigation() -> TopNavigationController {
         TopNavigationController(rootViewController: UIStoryboard.instantiateViewController(of: ProfileViewController.self))
-    }    
+    }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol TabBarFactory {
-    func createListNavigation() -> TopNavigationController
+    func createListNavigation(delegate: TabBarViewController?) -> TopNavigationController
     func createMapNavigation() -> TopNavigationController
     func createProfileNavigation() -> TopNavigationController
 }
@@ -24,6 +24,7 @@ private enum Constants {
     static let damping: CGFloat = 0.5
     static let velocity: CGFloat = 3.0
     static let additionalTab = 1
+    static let mapTabIndex = 1
 }
 
 class TabBarViewController: UITabBarController {
@@ -41,7 +42,7 @@ class TabBarViewController: UITabBarController {
         }
         
         viewControllers = [
-            factory.createListNavigation(),
+            factory.createListNavigation(delegate: self),
             factory.createMapNavigation(),
             factory.createProfileNavigation()
         ]
@@ -115,5 +116,16 @@ extension TabBarViewController: Injectable {
     
     func inject(dependencies: Dependencies) {
         factory = dependencies.factory
+    }
+}
+
+// MARK: - DataTransferableProtocol
+extension TabBarViewController: DataTransferableProtocol {
+    func showCityOnMap(for city: CityModel) {
+        guard let topController = viewControllers?[safe: 1] else { return }
+        let controller = topController.children.first as? MapViewController
+        controller?.viewDidLoad()
+        controller?.showSelectedCityOnMap(city)
+        selectedIndex = Constants.mapTabIndex
     }
 }

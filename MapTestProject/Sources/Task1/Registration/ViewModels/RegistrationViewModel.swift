@@ -15,6 +15,7 @@ protocol RegistrationViewModelDelegate {
 
 protocol RegistrationControllerDelegate: AnyObject {
     func presentTabBar(controller: TabBarViewController)
+    func showErrorMessage()
 }
 
 protocol RegistrationFactory {
@@ -34,9 +35,9 @@ class RegistrationViewModel: RegistrationViewModelDelegate {
     
     // MARK: - RegistrationViewModelDelegate
     func signInVieGoogle(user: GIDGoogleUser?, error: Error?) {
-        if let error = error {
-            // TODO: - Add
-            print(error)
+        guard error == nil else {
+            view?.showErrorMessage()
+            return
         }
         
         guard let token = user?.authentication.idToken, let accessToken = user?.authentication.accessToken else { return }
@@ -49,4 +50,3 @@ class RegistrationViewModel: RegistrationViewModelDelegate {
         }
     }
 }
-
