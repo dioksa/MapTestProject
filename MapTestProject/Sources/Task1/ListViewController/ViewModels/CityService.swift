@@ -13,7 +13,7 @@ protocol CityServiceHandler {
     func fetchData(points: [String], _ completion: @escaping ([CityModel]?) -> Void)
 }
 
-class CityService: CityServiceHandler {
+final class CityService: CityServiceHandler {
     private var reference = Database.database().reference()
     
     func fetchData(points: [String], _ completion: @escaping ([CityModel]?) -> Void) {

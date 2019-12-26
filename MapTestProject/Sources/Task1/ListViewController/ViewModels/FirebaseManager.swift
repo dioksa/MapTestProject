@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-class FirebaseManager {
+final class FirebaseManager {
     static let shared = FirebaseManager()
     private let reference = Database.database().reference()
     

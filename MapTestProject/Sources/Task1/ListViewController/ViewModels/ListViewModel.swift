@@ -11,7 +11,6 @@ import Foundation
 protocol ListViewModelDelegate {
     func sortedCitiesArray() -> [CityModel]
     func getCitiesInfo()
-    var arrayOfPoints: [String] { get set }
     func deleteRow(with path: IndexPath)
 }
 
@@ -20,14 +19,16 @@ protocol ListViewDataDisplaying: AnyObject {
     func deleteCell(with indexPath: IndexPath?)
 }
 
-class ListViewModel: ListViewModelDelegate {
+final class ListViewModel: ListViewModelDelegate {
+    // MARK: - Private properties
     private var cityService: CityServiceHandler?
     private var citiesToShow = [CityModel]()
-    var arrayOfPoints = ["Point1", "Point2", "Point3", "Point4", "Point5"]
+    private var arrayOfPoints = ["Point1", "Point2", "Point3", "Point4", "Point5"]
     
+    // MARK: - Variables
     weak var view: ListViewDataDisplaying?
 
-    
+    // MARK: - Methods
     func getCitiesInfo() {
         cityService?.fetchData(points: arrayOfPoints) { [weak self] in
             self?.response(data: $0)
@@ -39,12 +40,12 @@ class ListViewModel: ListViewModelDelegate {
     }
     
     func deleteRow(with indexPath: IndexPath) {
-        print("Point name", self.sortedCitiesArray()[indexPath.row].identifier)
         FirebaseManager.shared.removeCity(point: sortedCitiesArray()[indexPath.row].identifier)
         citiesToShow.removeLast()
         view?.deleteCell(with: indexPath)
     }
     
+    // MARK: - Private methods
     private func response(data: [CityModel]?) {
         guard let data = data else { return }
         citiesToShow = data

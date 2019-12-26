@@ -9,6 +9,17 @@
 import UIKit
 import GoogleMaps
 
+private enum Constants {
+    static let kievLatitude = 50.45466
+    static let kievLongitude = 30.5238
+    static let zoom: Float = 10
+    static let defaultCityName = "Kiev"
+    static let rightButtonTitle = "Next"
+    static let leftButtonTitle = "Home"
+    static let locationTitle = "Current Location"
+    static let transactionSpeed = 2.0
+}
+
 final class MapViewController: UIViewController {
     // MARK: - Private properties
     private var viewModel: MapViewModelDelegate?
@@ -26,6 +37,7 @@ final class MapViewController: UIViewController {
         tabBarItem = TabBarItem.map.makeTabBarItem()
     }
     
+    // MARK: - Controller's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureNavigation()
@@ -36,18 +48,32 @@ final class MapViewController: UIViewController {
         LocationManager.shared.startUpdatingLocation()
     }
     
+    // MARK: - Methods
+    func showSelectedCityOnMap(_ city: CityModel) {
+        LocationManager.shared.stopUpdatingLocation()
+        guard let latitude = city.latitude, let longitude = city.longitude else { return }
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: Constants.zoom)
+        currentCamera = camera
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
+        createMarker(latitude: latitude, longitude: longitude, name: city.name)
+    }
+    
+    // MARK: - Private methods
     private func configureNavigation() {
         navigationItem.title = "Map screen"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(switchToNextPoint))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: self, action: #selector(goToCurrentPosition))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.rightButtonTitle, style: .plain, target: self, action: #selector(switchToNextPoint))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: Constants.leftButtonTitle, style: .plain, target: self, action: #selector(goToCurrentPosition))
     }
     
     private func showDefaultCity() {
-        let camera = GMSCameraPosition.camera(withLatitude: 50.45466, longitude: 30.5238, zoom: 10)
+        let camera = GMSCameraPosition.camera(withLatitude: Constants.kievLatitude, longitude: Constants.kievLongitude, zoom: Constants.zoom)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        currentCamera = camera
         view = mapView
-
-        createMarker(latitude: 50.45466, longitude: 30.5238, name: "Kiev")
+        
+        createMarker(latitude: Constants.kievLatitude, longitude: Constants.kievLongitude, name: Constants.defaultCityName)
     }
     
     @objc private func goToCurrentPosition() {
@@ -75,38 +101,6 @@ final class MapViewController: UIViewController {
         
         createAnimation()
     }
-    
-    func showSelectedCityOnMap(_ city: CityModel) {
-        LocationManager.shared.stopUpdatingLocation()
-        guard let latitude = city.latitude, let longitude = city.longitude else { return }
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 10)
-        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        
-        createMarker(latitude: latitude, longitude: longitude, name: city.name)
-    }
-    
-    private func createAnimation() {
-        CATransaction.begin()
-        CATransaction.setValue(2.0, forKey: kCATransactionAnimationDuration)
-        
-        guard let latitude = currentDestination?.latitude, let longitude = currentDestination?.longitude else { return }
-        mapView?.animate(to: GMSCameraPosition.camera(
-            withLatitude: latitude,
-            longitude: longitude,
-            zoom: 10))
-        
-        CATransaction.commit()
-        createMarker(latitude: latitude, longitude: longitude, name: currentDestination?.name)
-    }
-    
-    private func createMarker(latitude: CLLocationDegrees, longitude: CLLocationDegrees, name: String?) {
-        let markerPosition = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let marker = GMSMarker(position: markerPosition)
-        marker.title = name
-        marker.icon = UIImage(named: "mapIcon")
-        marker.map = mapView
-    }
 }
 
 // MARK: - Injectable
@@ -123,20 +117,41 @@ extension MapViewController: Injectable {
 // MARK: - CLLocationManagerDelegate
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
+        
         let location = locations.last
-
+        
         guard let latitude = location?.coordinate.latitude, let longitude = location?.coordinate.longitude else { return }
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 10.0)
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: Constants.zoom)
         currentCamera = camera
         mapView?.animate(to: camera)
         
+        createMarker(latitude: latitude, longitude: longitude, name: Constants.locationTitle)
+        
+        LocationManager.shared.stopUpdatingLocation()
+    }
+}
+
+// MARK: - Elements creation
+private extension MapViewController {
+    func createMarker(latitude: CLLocationDegrees, longitude: CLLocationDegrees, name: String?) {
         let markerPosition = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let marker = GMSMarker(position: markerPosition)
-        marker.title = "Current Location"
+        marker.title = name
         marker.icon = UIImage(named: "mapIcon")
         marker.map = mapView
-
-        LocationManager.shared.stopUpdatingLocation()
+    }
+    
+    func createAnimation() {
+        CATransaction.begin()
+        CATransaction.setValue(Constants.transactionSpeed, forKey: kCATransactionAnimationDuration)
+        
+        guard let latitude = currentDestination?.latitude, let longitude = currentDestination?.longitude else { return }
+        mapView?.animate(to: GMSCameraPosition.camera(
+            withLatitude: latitude,
+            longitude: longitude,
+            zoom: Constants.zoom))
+        
+        CATransaction.commit()
+        createMarker(latitude: latitude, longitude: longitude, name: currentDestination?.name)
     }
 }

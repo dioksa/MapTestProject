@@ -11,7 +11,7 @@ import GoogleSignIn
 import SnapKit
 import Firebase
 
-class RegistrationViewController: UIViewController {
+final class RegistrationViewController: UIViewController {
     // MARK: - Private properties
     private var viewModel: RegistrationViewModelDelegate?
     
@@ -55,6 +55,10 @@ extension RegistrationViewController: Injectable {
 
 // MARK: - RegistrationControllerDelegate
 extension RegistrationViewController: RegistrationControllerDelegate {
+    func showErrorMessage() {
+        addAlertMessage(alertTitle: "Sorry, something goes wrong. Try again later")
+    }
+    
     func presentTabBar(controller: TabBarViewController) {
         present(controller, animated: true)
     }

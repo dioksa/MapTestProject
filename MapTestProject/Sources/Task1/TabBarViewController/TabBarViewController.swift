@@ -12,7 +12,6 @@ protocol TabBarFactory {
     func createListNavigation(delegate: TabBarViewController?) -> TopNavigationController
     func createMapNavigation() -> TopNavigationController
     func createProfileNavigation() -> TopNavigationController
-    func createMapViewController() -> MapViewController
 }
 
 private enum Constants {
@@ -25,6 +24,7 @@ private enum Constants {
     static let damping: CGFloat = 0.5
     static let velocity: CGFloat = 3.0
     static let additionalTab = 1
+    static let mapTabIndex = 1
 }
 
 class TabBarViewController: UITabBarController {
@@ -126,6 +126,6 @@ extension TabBarViewController: DataTransferableProtocol {
         let controller = topController.children.first as? MapViewController
         controller?.viewDidLoad()
         controller?.showSelectedCityOnMap(city)
-        selectedIndex = 1
+        selectedIndex = Constants.mapTabIndex
     }
 }

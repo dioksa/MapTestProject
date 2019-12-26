@@ -16,16 +16,17 @@ protocol ListViewFactory {
 protocol DataTransferableProtocol: AnyObject {
     func showCityOnMap(for city: CityModel)
 }
-    
-    
+
 final class ListViewController: UIViewController {
+    // MARK: - Private properties
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var spinner: UIActivityIndicatorView!
-
+    
     private var viewModel: ListViewModelDelegate?
     
+    // MARK: - Variables
     weak var mapDelegate: DataTransferableProtocol?
-        
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         tabBarItem = TabBarItem.list.makeTabBarItem()
@@ -36,20 +37,28 @@ final class ListViewController: UIViewController {
         tabBarItem = TabBarItem.list.makeTabBarItem()
     }
     
+    // MARK: - Controller's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(longPressGestureRecognizer:)))
-        tableView.addGestureRecognizer(longPressRecognizer)
+        
         navigationItem.title = "List screen"
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UINib(nibName: "CityPointCell", bundle: nil), forCellReuseIdentifier: "CityPointCell")
+        configureTableView()
         viewModel?.getCitiesInfo()
     }
     
-    @objc func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
+    // MARK: - Private methods
+    private func configureTableView() {
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(longPressGestureRecognizer:)))
+        tableView.addGestureRecognizer(longPressRecognizer)
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UINib(nibName: "CityPointCell", bundle: nil), forCellReuseIdentifier: "CityPointCell")
+    }
+    
+    @objc private func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
         let longPress = longPressGestureRecognizer as UILongPressGestureRecognizer
-
+        
         switch longPress.state {
         case .began:
             let locationInView = longPress.location(in: tableView)
@@ -88,7 +97,7 @@ extension ListViewController: UITableViewDelegate {
         guard let city = viewModel?.sortedCitiesArray()[indexPath.row] else { return }
         
         guard city.latitude != nil, city.longitude != nil else {
-           addAlertMessage(alertTitle: "There are no available points to show on map")
+            addAlertMessage(alertTitle: "There are no available points to show on map")
             return
         }
         
@@ -115,7 +124,7 @@ extension ListViewController: ListViewDataDisplaying {
         tableView.reloadData()
     }
     
-
+    
     func updateTableViewCells() {
         tableView.reloadData()
     }

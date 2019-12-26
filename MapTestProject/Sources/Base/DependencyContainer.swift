@@ -60,14 +60,4 @@ extension DependencyContainer: TabBarFactory {
     func createProfileNavigation() -> TopNavigationController {
         TopNavigationController(rootViewController: UIStoryboard.instantiateViewController(of: ProfileViewController.self))
     }
-    
-    func createMapViewController() -> MapViewController {
-        let controller = UIStoryboard.instantiateViewController(of: MapViewController.self)
-        let viewModel = MapViewModel()
-        let viewModelDependencies = MapViewModel.Dependencies(cityService: CityService())
-        viewModel.inject(dependencies: viewModelDependencies)
-        let dependencies = MapViewController.Dependencies(viewModel: viewModel)
-        controller.inject(dependencies: dependencies)
-        return controller
-    }
 }

@@ -13,21 +13,27 @@ protocol MapViewModelDelegate {
     func getCitiesInfo()
 }
 
-class MapViewModel: MapViewModelDelegate {
+final class MapViewModel: MapViewModelDelegate {
+    // MARK: - Private properties
     private var cityService: CityServiceHandler?
-    var cityDestinations = [CityModel]()
     private var arrayOfPoints = ["Point1", "Point2", "Point3", "Point4", "Point5"]
     
-    func getCitiesInfo() {
-           cityService?.fetchData(points: arrayOfPoints) { [weak self] in
-               self?.response(data: $0)
-           }
-       }
+    // MARK: - MapViewModelDelegate
+    var cityDestinations = [CityModel]()
     
+    func getCitiesInfo() {
+        cityService?.fetchData(points: arrayOfPoints) { [weak self] in
+            self?.response(data: $0)
+        }
+    }
+    
+    // MARK: - Private methods
     private func response(data: [CityModel]?) {
-           guard let data = data else { return }
-           cityDestinations = data
-       }
+        guard let data = data else { return }
+        
+        let filteredCities = data.filter { $0.latitude != nil && $0.longitude != nil }
+        cityDestinations = filteredCities
+    }
 }
 
 // MARK: - Injectable

@@ -7,12 +7,13 @@
 //
 
 import UIKit
-import GoogleSignIn
 import Firebase
 
-class ProfileViewController: UIViewController {    
-    @IBAction func signOutButton(_ sender: UIButton) {
+final class ProfileViewController: UIViewController {
+    // MARK: - Private methods
+    @IBAction private func signOutButton(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
+        
         do {
             try firebaseAuth.signOut()
         } catch let signOutError as NSError {
@@ -32,6 +33,7 @@ class ProfileViewController: UIViewController {
         tabBarItem = TabBarItem.profile.makeTabBarItem()
     }
     
+    // MARK: - Controller's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Profile screen"

@@ -114,7 +114,6 @@
 			children = (
 				1E245C1123B0E2720073C11E /* Base */,
 				1E245C0D23B0E1C50073C11E /* Task1 */,
-				1E245C0E23B0E1D20073C11E /* Task2 */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -130,13 +129,6 @@
 				1E245C1823B0E3010073C11E /* ProfileViewController */,
 			);
 			path = Task1;
-			sourceTree = "<group>";
-		};
-		1E245C0E23B0E1D20073C11E /* Task2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Task2;
 			sourceTree = "<group>";
 		};
 		1E245C0F23B0E23D0073C11E /* Extensions */ = {
@@ -221,9 +213,8 @@
 		1E245C1923B0E3100073C11E /* MapViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1E245C1C23B0E3610073C11E /* MapViewController.swift */,
-				1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */,
-				1E245C3F23B4013C0073C11E /* MapViewModel.swift */,
+				1E245C4723B4B9F60073C11E /* ViewModels */,
+				1E245C4623B4B9E80073C11E /* Views */,
 			);
 			path = MapViewController;
 			sourceTree = "<group>";
@@ -280,6 +271,23 @@
 				1E245C4423B4A4D20073C11E /* Collection.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		1E245C4623B4B9E80073C11E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C1C23B0E3610073C11E /* MapViewController.swift */,
+				1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E245C4723B4B9F60073C11E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C3F23B4013C0073C11E /* MapViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		1E9F156923B0B09F00F5C0E1 = {
