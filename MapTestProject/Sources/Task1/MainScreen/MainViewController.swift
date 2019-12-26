@@ -21,16 +21,16 @@ private enum Constants {
     static let size: CGFloat = 40.0
     static let originY: CGFloat = 20.0
     static let delay = 0.25
-    static let duration: TimeInterval = 1
+    static let duration: TimeInterval = 2
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
+    // MARK: - Private variables
     private let container = DependencyContainer()
     
-    // MARK: - Private variables
     @IBOutlet private weak var topButton: UIButton! {
         didSet {
-            UIView.animate(withDuration: 1, animations: { [weak self] in
+            UIView.animate(withDuration: Constants.duration, animations: { [weak self] in
                 self?.topButton.backgroundColor = .red
                 self?.topButton.frame.size.width += Constants.size
                 self?.topButton.frame.size.height += Constants.size
@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBAction func topButtonAction(_ sender: UIButton) {
+    @IBAction private func topButtonAction(_ sender: UIButton) {
         if Auth.auth().currentUser == nil {
             let navigationController = container.createNavigationController()
             navigationController.modalPresentationStyle = .fullScreen
@@ -67,7 +67,7 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBAction func bottomButtonAction(_ sender: UIButton) {
-        print("Button button was tapped")
+    @IBAction private func bottomButtonAction(_ sender: UIButton) {
+        print("Bottom button was tapped")
     }
 }

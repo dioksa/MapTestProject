@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WrD-Xw-PdX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="21V-dE-MpV">
+            <objects>
+                <viewController id="WrD-Xw-PdX" customClass="ListViewController" customModule="MapTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3Y-bq-wnf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="keA-il-svz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5Jl-bN-Yym">
+                                <rect key="frame" x="186.09128630705413" y="200.00000000000011" width="39.999999999999957" height="44.000000000000007"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="color" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="keA-il-svz" firstAttribute="trailing" secondItem="HkB-Kk-mbQ" secondAttribute="trailing" id="Opm-Cx-eCN"/>
+                            <constraint firstItem="keA-il-svz" firstAttribute="top" secondItem="HkB-Kk-mbQ" secondAttribute="top" id="XmC-bD-f6G"/>
+                            <constraint firstItem="HkB-Kk-mbQ" firstAttribute="bottom" secondItem="keA-il-svz" secondAttribute="bottom" id="bd2-Ga-Gx7"/>
+                            <constraint firstItem="keA-il-svz" firstAttribute="leading" secondItem="HkB-Kk-mbQ" secondAttribute="leading" id="txA-HB-TIW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HkB-Kk-mbQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="5Jl-bN-Yym" id="p7h-jQ-kBo"/>
+                        <outlet property="tableView" destination="keA-il-svz" id="zJC-e6-ImH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JV2-M3-nYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+    </scenes>
+</document>

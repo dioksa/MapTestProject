@@ -26,6 +26,16 @@
 		1E245C2723B1F5B00073C11E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C2623B1F5B00073C11E /* GoogleService-Info.plist */; };
 		1E245C2923B21F060073C11E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C2823B21F060073C11E /* DependencyContainer.swift */; };
 		1E245C2D23B233DF0073C11E /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C2C23B233DF0073C11E /* RegistrationViewModel.swift */; };
+		1E245C2F23B2463F0073C11E /* CityPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C2E23B2463F0073C11E /* CityPointCell.swift */; };
+		1E245C3123B246560073C11E /* CityPointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C3023B246560073C11E /* CityPointCell.xib */; };
+		1E245C3423B248F90073C11E /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3323B248F90073C11E /* CityModel.swift */; };
+		1E245C3623B2575B0073C11E /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3523B2575B0073C11E /* CityService.swift */; };
+		1E245C3823B258290073C11E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3723B258290073C11E /* ListViewModel.swift */; };
+		1E245C3C23B27D5C0073C11E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3B23B27D5C0073C11E /* UIViewController.swift */; };
+		1E245C3E23B28FF60073C11E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3D23B28FF60073C11E /* FirebaseManager.swift */; };
+		1E245C4023B4013C0073C11E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3F23B4013C0073C11E /* MapViewModel.swift */; };
+		1E245C4223B422BC0073C11E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C4123B422BB0073C11E /* LocationManager.swift */; };
+		1E245C4523B4A4D20073C11E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C4423B4A4D20073C11E /* Collection.swift */; };
 		1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */; };
 		1E9F157823B0B09F00F5C0E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */; };
 		1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157923B0B09F00F5C0E1 /* MainViewController.swift */; };
@@ -54,6 +64,16 @@
 		1E245C2623B1F5B00073C11E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E245C2823B21F060073C11E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		1E245C2C23B233DF0073C11E /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		1E245C2E23B2463F0073C11E /* CityPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPointCell.swift; sourceTree = "<group>"; };
+		1E245C3023B246560073C11E /* CityPointCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityPointCell.xib; sourceTree = "<group>"; };
+		1E245C3323B248F90073C11E /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		1E245C3523B2575B0073C11E /* CityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityService.swift; sourceTree = "<group>"; };
+		1E245C3723B258290073C11E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1E245C3B23B27D5C0073C11E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1E245C3D23B28FF60073C11E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		1E245C3F23B4013C0073C11E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		1E245C4123B422BB0073C11E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1E245C4423B4A4D20073C11E /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		1E9F157223B0B09F00F5C0E1 /* MapTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +142,7 @@
 		1E245C0F23B0E23D0073C11E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1E245C4323B4A4C00073C11E /* Foundation */,
 				1E245C1023B0E25B0073C11E /* UIKit */,
 			);
 			path = Extensions;
@@ -133,6 +154,7 @@
 				1E245BFB23B0CA620073C11E /* UIStoryboard.swift */,
 				1E245C0723B0E1580073C11E /* UITabBarItem.swift */,
 				1E245C1323B0E2AE0073C11E /* UIImage.swift */,
+				1E245C3B23B27D5C0073C11E /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -145,6 +167,7 @@
 				1E245BFF23B0D1860073C11E /* BaseNavigationController.swift */,
 				1E245C2423B1ED4B0073C11E /* TopNavigationController.swift */,
 				1E245C2823B21F060073C11E /* DependencyContainer.swift */,
+				1E245C4123B422BB0073C11E /* LocationManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -179,8 +202,9 @@
 		1E245C1723B0E2F70073C11E /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1E245C0923B0E19A0073C11E /* ListViewController.swift */,
-				1E245C1A23B0E3330073C11E /* ListViewController.storyboard */,
+				1E245C3223B248E80073C11E /* Models */,
+				1E245C3A23B25AC40073C11E /* ViewModels */,
+				1E245C3923B25ABF0073C11E /* Views */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -199,6 +223,7 @@
 			children = (
 				1E245C1C23B0E3610073C11E /* MapViewController.swift */,
 				1E245C1E23B0E36A0073C11E /* MapViewController.storyboard */,
+				1E245C3F23B4013C0073C11E /* MapViewModel.swift */,
 			);
 			path = MapViewController;
 			sourceTree = "<group>";
@@ -218,6 +243,43 @@
 				1E245C2C23B233DF0073C11E /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E245C3223B248E80073C11E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C3323B248F90073C11E /* CityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E245C3923B25ABF0073C11E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C0923B0E19A0073C11E /* ListViewController.swift */,
+				1E245C1A23B0E3330073C11E /* ListViewController.storyboard */,
+				1E245C2E23B2463F0073C11E /* CityPointCell.swift */,
+				1E245C3023B246560073C11E /* CityPointCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E245C3A23B25AC40073C11E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C3723B258290073C11E /* ListViewModel.swift */,
+				1E245C3523B2575B0073C11E /* CityService.swift */,
+				1E245C3D23B28FF60073C11E /* FirebaseManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E245C4323B4A4C00073C11E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C4423B4A4D20073C11E /* Collection.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		1E9F156923B0B09F00F5C0E1 = {
@@ -335,6 +397,7 @@
 				1E245BFA23B0C9420073C11E /* RegistrationViewController.storyboard in Resources */,
 				1E245C2723B1F5B00073C11E /* GoogleService-Info.plist in Resources */,
 				1E9F157D23B0B09F00F5C0E1 /* MainViewController.storyboard in Resources */,
+				1E245C3123B246560073C11E /* CityPointCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,16 +468,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E245C2923B21F060073C11E /* DependencyContainer.swift in Sources */,
+				1E245C3423B248F90073C11E /* CityModel.swift in Sources */,
+				1E245C2F23B2463F0073C11E /* CityPointCell.swift in Sources */,
 				1E245C1D23B0E3610073C11E /* MapViewController.swift in Sources */,
+				1E245C3623B2575B0073C11E /* CityService.swift in Sources */,
 				1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */,
 				1E245C1423B0E2AE0073C11E /* UIImage.swift in Sources */,
+				1E245C4223B422BC0073C11E /* LocationManager.swift in Sources */,
 				1E245C2523B1ED4B0073C11E /* TopNavigationController.swift in Sources */,
 				1E245BFC23B0CA620073C11E /* UIStoryboard.swift in Sources */,
+				1E245C3E23B28FF60073C11E /* FirebaseManager.swift in Sources */,
 				1E245C0023B0D1860073C11E /* BaseNavigationController.swift in Sources */,
 				1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */,
 				1E245C2123B0ECD10073C11E /* ProfileViewController.swift in Sources */,
 				1E245C0423B0DE660073C11E /* TabBarViewController.swift in Sources */,
+				1E245C4523B4A4D20073C11E /* Collection.swift in Sources */,
 				1E245C2D23B233DF0073C11E /* RegistrationViewModel.swift in Sources */,
+				1E245C3C23B27D5C0073C11E /* UIViewController.swift in Sources */,
+				1E245C3823B258290073C11E /* ListViewModel.swift in Sources */,
+				1E245C4023B4013C0073C11E /* MapViewModel.swift in Sources */,
 				1E245C0A23B0E19A0073C11E /* ListViewController.swift in Sources */,
 				1E245BF823B0C8780073C11E /* RegistrationViewController.swift in Sources */,
 				1E245C0823B0E1580073C11E /* UITabBarItem.swift in Sources */,

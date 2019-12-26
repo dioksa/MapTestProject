@@ -19,12 +19,7 @@ class ProfileViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
         
-        dismiss(animated: true) { [weak self] in
-            let controller = UIStoryboard.instantiateViewController(of: RegistrationViewController.self)
-            let navigation = BaseNavigationController(rootViewController: controller)
-            navigation.modalPresentationStyle = .fullScreen
-            self?.present(navigation, animated: true, completion: nil)
-        }
+        dismiss(animated: true, completion: nil)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

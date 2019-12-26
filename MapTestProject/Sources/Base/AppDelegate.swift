@@ -9,6 +9,7 @@
 import UIKit
 import GoogleSignIn
 import Firebase
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GMSServices.provideAPIKey("AIzaSyAhXuH5i1-P6UI2N20kPvogMIQY6-Tg_qk")
+        LocationManager.shared.requestWhenInUseAuthorization()
         
         return true
     }
