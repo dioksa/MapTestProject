@@ -21,7 +21,7 @@ private enum Constants {
     static let size: CGFloat = 40.0
     static let originY: CGFloat = 20.0
     static let delay = 0.25
-    static let duration: TimeInterval = 2
+    static let duration: TimeInterval = 0.1
 }
 
 final class MainViewController: UIViewController {
@@ -68,6 +68,9 @@ final class MainViewController: UIViewController {
     }
     
     @IBAction private func bottomButtonAction(_ sender: UIButton) {
-        print("Bottom button was tapped")
+        let controller = UIStoryboard.instantiateViewController(of: MainScreenViewController.self)
+        let navigationController = MainScreenNavigationController(rootViewController: controller)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }

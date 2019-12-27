@@ -36,6 +36,18 @@
 		1E245C4023B4013C0073C11E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C3F23B4013C0073C11E /* MapViewModel.swift */; };
 		1E245C4223B422BC0073C11E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C4123B422BB0073C11E /* LocationManager.swift */; };
 		1E245C4523B4A4D20073C11E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C4423B4A4D20073C11E /* Collection.swift */; };
+		1E245C4D23B54E640073C11E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C4C23B54E640073C11E /* RegisterViewController.swift */; };
+		1E245C4F23B54E990073C11E /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C4E23B54E990073C11E /* RegisterViewController.storyboard */; };
+		1E245C5223B54EE80073C11E /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C5123B54EE80073C11E /* MainScreenViewController.swift */; };
+		1E245C5423B54F080073C11E /* MainScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C5323B54F080073C11E /* MainScreenViewController.storyboard */; };
+		1E245C5623B552820073C11E /* MainScreenNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C5523B552820073C11E /* MainScreenNavigationController.swift */; };
+		1E245C5823B553F20073C11E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C5723B553F20073C11E /* DashboardViewController.swift */; };
+		1E245C5A23B5540C0073C11E /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C5923B5540C0073C11E /* DashboardViewController.storyboard */; };
+		1E245C5C23B554420073C11E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C5B23B554420073C11E /* ChartViewController.swift */; };
+		1E245C5E23B5545A0073C11E /* ChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E245C5D23B5545A0073C11E /* ChartViewController.storyboard */; };
+		1E245C6423B5670B0073C11E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C6323B5670A0073C11E /* UIButton.swift */; };
+		1E245C6623B568020073C11E /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C6523B568020073C11E /* UILabel.swift */; };
+		1E245C6A23B64DEA0073C11E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E245C6923B64DEA0073C11E /* CircularProgressView.swift */; };
 		1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */; };
 		1E9F157823B0B09F00F5C0E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */; };
 		1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F157923B0B09F00F5C0E1 /* MainViewController.swift */; };
@@ -74,6 +86,18 @@
 		1E245C3F23B4013C0073C11E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		1E245C4123B422BB0073C11E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1E245C4423B4A4D20073C11E /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		1E245C4C23B54E640073C11E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1E245C4E23B54E990073C11E /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		1E245C5123B54EE80073C11E /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		1E245C5323B54F080073C11E /* MainScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreenViewController.storyboard; sourceTree = "<group>"; };
+		1E245C5523B552820073C11E /* MainScreenNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenNavigationController.swift; sourceTree = "<group>"; };
+		1E245C5723B553F20073C11E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1E245C5923B5540C0073C11E /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		1E245C5B23B554420073C11E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		1E245C5D23B5545A0073C11E /* ChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChartViewController.storyboard; sourceTree = "<group>"; };
+		1E245C6323B5670A0073C11E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		1E245C6523B568020073C11E /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		1E245C6923B64DEA0073C11E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		1E9F157223B0B09F00F5C0E1 /* MapTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9F157523B0B09F00F5C0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9F157723B0B09F00F5C0E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +138,7 @@
 			children = (
 				1E245C1123B0E2720073C11E /* Base */,
 				1E245C0D23B0E1C50073C11E /* Task1 */,
+				1E245C4823B54CE90073C11E /* Task2 */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -147,6 +172,8 @@
 				1E245C0723B0E1580073C11E /* UITabBarItem.swift */,
 				1E245C1323B0E2AE0073C11E /* UIImage.swift */,
 				1E245C3B23B27D5C0073C11E /* UIViewController.swift */,
+				1E245C6323B5670A0073C11E /* UIButton.swift */,
+				1E245C6523B568020073C11E /* UILabel.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -290,6 +317,55 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		1E245C4823B54CE90073C11E /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C5023B54EC30073C11E /* MainScreen */,
+				1E245C4923B54E080073C11E /* RegisterScreen */,
+				1E245C4A23B54E1B0073C11E /* Dashboard */,
+				1E245C4B23B54E290073C11E /* Chart */,
+			);
+			path = Task2;
+			sourceTree = "<group>";
+		};
+		1E245C4923B54E080073C11E /* RegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C4C23B54E640073C11E /* RegisterViewController.swift */,
+				1E245C4E23B54E990073C11E /* RegisterViewController.storyboard */,
+			);
+			path = RegisterScreen;
+			sourceTree = "<group>";
+		};
+		1E245C4A23B54E1B0073C11E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C5723B553F20073C11E /* DashboardViewController.swift */,
+				1E245C5923B5540C0073C11E /* DashboardViewController.storyboard */,
+				1E245C6923B64DEA0073C11E /* CircularProgressView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		1E245C4B23B54E290073C11E /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C5B23B554420073C11E /* ChartViewController.swift */,
+				1E245C5D23B5545A0073C11E /* ChartViewController.storyboard */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		1E245C5023B54EC30073C11E /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E245C5123B54EE80073C11E /* MainScreenViewController.swift */,
+				1E245C5323B54F080073C11E /* MainScreenViewController.storyboard */,
+				1E245C5523B552820073C11E /* MainScreenNavigationController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		1E9F156923B0B09F00F5C0E1 = {
 			isa = PBXGroup;
 			children = (
@@ -397,14 +473,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E245C1F23B0E36A0073C11E /* MapViewController.storyboard in Resources */,
+				1E245C5A23B5540C0073C11E /* DashboardViewController.storyboard in Resources */,
 				1E9F158223B0B0A100F5C0E1 /* LaunchScreen.storyboard in Resources */,
 				1E9F157F23B0B0A100F5C0E1 /* Assets.xcassets in Resources */,
 				1E245C0623B0DEC70073C11E /* TabBarViewController.storyboard in Resources */,
 				1E245C2323B0ED150073C11E /* ProfileViewController.storyboard in Resources */,
 				1E245C1B23B0E3330073C11E /* ListViewController.storyboard in Resources */,
 				1E245BFA23B0C9420073C11E /* RegistrationViewController.storyboard in Resources */,
+				1E245C5E23B5545A0073C11E /* ChartViewController.storyboard in Resources */,
 				1E245C2723B1F5B00073C11E /* GoogleService-Info.plist in Resources */,
+				1E245C4F23B54E990073C11E /* RegisterViewController.storyboard in Resources */,
 				1E9F157D23B0B09F00F5C0E1 /* MainViewController.storyboard in Resources */,
+				1E245C5423B54F080073C11E /* MainScreenViewController.storyboard in Resources */,
 				1E245C3123B246560073C11E /* CityPointCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,24 +556,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E245C2923B21F060073C11E /* DependencyContainer.swift in Sources */,
+				1E245C5223B54EE80073C11E /* MainScreenViewController.swift in Sources */,
+				1E245C5C23B554420073C11E /* ChartViewController.swift in Sources */,
 				1E245C3423B248F90073C11E /* CityModel.swift in Sources */,
 				1E245C2F23B2463F0073C11E /* CityPointCell.swift in Sources */,
 				1E245C1D23B0E3610073C11E /* MapViewController.swift in Sources */,
+				1E245C6623B568020073C11E /* UILabel.swift in Sources */,
 				1E245C3623B2575B0073C11E /* CityService.swift in Sources */,
 				1E9F157A23B0B09F00F5C0E1 /* MainViewController.swift in Sources */,
 				1E245C1423B0E2AE0073C11E /* UIImage.swift in Sources */,
 				1E245C4223B422BC0073C11E /* LocationManager.swift in Sources */,
+				1E245C6423B5670B0073C11E /* UIButton.swift in Sources */,
 				1E245C2523B1ED4B0073C11E /* TopNavigationController.swift in Sources */,
 				1E245BFC23B0CA620073C11E /* UIStoryboard.swift in Sources */,
 				1E245C3E23B28FF60073C11E /* FirebaseManager.swift in Sources */,
 				1E245C0023B0D1860073C11E /* BaseNavigationController.swift in Sources */,
 				1E9F157623B0B09F00F5C0E1 /* AppDelegate.swift in Sources */,
 				1E245C2123B0ECD10073C11E /* ProfileViewController.swift in Sources */,
+				1E245C5823B553F20073C11E /* DashboardViewController.swift in Sources */,
 				1E245C0423B0DE660073C11E /* TabBarViewController.swift in Sources */,
 				1E245C4523B4A4D20073C11E /* Collection.swift in Sources */,
+				1E245C5623B552820073C11E /* MainScreenNavigationController.swift in Sources */,
+				1E245C4D23B54E640073C11E /* RegisterViewController.swift in Sources */,
 				1E245C2D23B233DF0073C11E /* RegistrationViewModel.swift in Sources */,
 				1E245C3C23B27D5C0073C11E /* UIViewController.swift in Sources */,
 				1E245C3823B258290073C11E /* ListViewModel.swift in Sources */,
+				1E245C6A23B64DEA0073C11E /* CircularProgressView.swift in Sources */,
 				1E245C4023B4013C0073C11E /* MapViewModel.swift in Sources */,
 				1E245C0A23B0E19A0073C11E /* ListViewController.swift in Sources */,
 				1E245BF823B0C8780073C11E /* RegistrationViewController.swift in Sources */,
