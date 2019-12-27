@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsy-Ym-dNs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="wTU-qg-eD7">
+            <objects>
+                <viewController id="wsy-Ym-dNs" customClass="MainScreenViewController" customModule="MapTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZc-b2-a6u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="w2V-76-KNt">
+                                <rect key="frame" x="140.5" y="373" width="133" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-KS-sgK">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
+                                        <state key="normal" title="Registration screen"/>
+                                        <connections>
+                                            <action selector="handleRegistrationButtonTap:" destination="wsy-Ym-dNs" eventType="touchUpInside" id="ryr-SQ-XmO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-3A-vSn">
+                                        <rect key="frame" x="0.0" y="60" width="133" height="30"/>
+                                        <state key="normal" title="Dashboard screen"/>
+                                        <connections>
+                                            <action selector="handleDashboardButtonTap:" destination="wsy-Ym-dNs" eventType="touchUpInside" id="RHW-VV-goC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qiw-qj-cgx">
+                                        <rect key="frame" x="0.0" y="120" width="133" height="30"/>
+                                        <state key="normal" title="Chart screen"/>
+                                        <connections>
+                                            <action selector="handleChartButtonTap:" destination="wsy-Ym-dNs" eventType="touchUpInside" id="CDl-ov-WkD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w2V-76-KNt" firstAttribute="centerX" secondItem="cZc-b2-a6u" secondAttribute="centerX" id="Kye-Wj-anl"/>
+                            <constraint firstItem="w2V-76-KNt" firstAttribute="centerY" secondItem="cZc-b2-a6u" secondAttribute="centerY" id="vjv-g7-ral"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0qe-Wm-Vjs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euo-pq-But" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+</document>
